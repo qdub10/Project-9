@@ -13,4 +13,10 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    outDir: "dist", // ✅ Ensure the build output goes to "dist/"
+    rollupOptions: {
+      input: "index.html", // ✅ Ensure index.html stays in dist/
+    },
+  },
 });
