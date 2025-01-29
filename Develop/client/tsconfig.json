@@ -9,7 +9,12 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+
+    /* Fix for Render deployment */
+    "rootDir": ".", 
+    "outDir": "dist"
   },
-  "include": ["src"]
+  "include": ["."]
 }
+
